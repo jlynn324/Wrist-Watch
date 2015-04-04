@@ -1,4 +1,4 @@
-#include <pebble.h>
+/*#include <pebble.h>
 
 static Window *window;
 static TextLayer *text_layer;
@@ -55,3 +55,4 @@ int main(void) {
   app_event_loop();
   deinit();
 }
+*/
