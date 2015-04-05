@@ -13,11 +13,15 @@ static TextLayer *try;
 //to the phone
 
  void send_int(int key, int value) {
+     
   DictionaryIterator *iter;
   app_message_outbox_begin(&iter);
   dict_write_int(iter, key, &value, sizeof(int), true);
     //Send the data!
   app_message_outbox_send();
+                    APP_LOG(APP_LOG_LEVEL_INFO, "Sent.");
+
+
 }
 
 
@@ -31,7 +35,6 @@ static TextLayer *try;
      text_layer_set_text(try, "Calling emergency contact");
      layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
 //      psleep(4000);
-
      send_int(1, 1);
      deinit2();
 
@@ -45,7 +48,7 @@ static TextLayer *try;
     text_layer_set_text(try, "Calling 911");
     layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
 
-    send_int(2, 2);
+//     send_int(2, 2);
     
     
      deinit2();
@@ -62,7 +65,7 @@ static TextLayer *try;
 
     
     
-    send_int(3, 3);
+//     send_int(3, 3);
      
      deinit2();
 
