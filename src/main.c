@@ -104,6 +104,7 @@ void init() {
     
     window_set_click_config_provider(g_window, click_config_provider);
     window_stack_push(g_window, true); 
+    psleep(100);
     
     
 
