@@ -7,7 +7,13 @@
     "longName": "Wrist-Watch",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/perfect-dos-vga.ttf",
+                "name": "TEXT_18",
+                "type": "font"
+            }
+        ]
     },
     "sdkVersion": "2",
     "shortName": "Wrist-Watch",
