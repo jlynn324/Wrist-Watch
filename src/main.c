@@ -32,7 +32,7 @@ static TextLayer *try;
      layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
 //      psleep(4000);
 
-     //send_int(1, 1);
+     send_int(1, 1);
      deinit2();
 
 
@@ -45,7 +45,7 @@ static TextLayer *try;
     text_layer_set_text(try, "Calling 911");
     layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
 
-    //send_int(2, 2);
+    send_int(2, 2);
     
     
      deinit2();
@@ -62,7 +62,7 @@ static TextLayer *try;
 
     
     
-    //send_int(3, 3);
+    send_int(3, 3);
      
      deinit2();
 

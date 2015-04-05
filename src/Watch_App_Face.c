@@ -10,7 +10,7 @@ void window_load(Window *window)
     text_layer_set_text_color(choiceOne, GColorBlack);
     
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(choiceOne));
-    text_layer_set_text(choiceOne, "    Emergency \n\n\n\n    911 \n\n\n\n\n    Message Sphere");
+    text_layer_set_text(choiceOne, "    Call Emergency Contact \n\n\n\n    Call 911 \n\n\n\n\n    Send Text Message");
 }
 
 void window_unload(Window *window)    
