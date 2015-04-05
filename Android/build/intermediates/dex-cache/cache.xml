@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/pre-dexed/debug/classes-726a4055a32fe89fdd45563dc69bd199f0b67e76.jar" />
+    </item>
+    <item
+        jar="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-de966742d2057c9075e930d1f8af41fab0d97e1f.jar" />
+    </item>
+    <item
+        jar="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/pre-dexed/debug/classes-30ade8edba284c902968e1dfb4bcbb34355a55b6.jar" />
+    </item>
+    <item
+        jar="/Users/Ky-Cuong/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-2ffcf8f2988e3449b4dc05a9d83349e577fe3e94.jar" />
+    </item>
+    <item
+        jar="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/3.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bd72bf60a6e56573eecb0e6abf419fac2b1fc1e6">
+        <dex dex="/Users/Ky-Cuong/Dropbox/Code/GitHub/Wrist-Watch2/app/build/intermediates/pre-dexed/debug/classes-2721ad9101398418a2a4b98d2f07d57487a613df.jar" />
+    </item>
+
+</items>
