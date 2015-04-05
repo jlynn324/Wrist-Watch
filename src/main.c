@@ -29,11 +29,10 @@ static TextLayer *try;
      init2();
      
      text_layer_set_text(try, "Calling emergency contact");
-    if(window_stack_contains_window(s_main_window))
-        
-     APP_LOG(APP_LOG_LEVEL_INFO, "PRESENT.");
+     layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
+//      psleep(4000);
+
      //send_int(1, 1);
-    psleep(10000);
      deinit2();
 
 
@@ -44,6 +43,8 @@ static TextLayer *try;
      
     init2();
     text_layer_set_text(try, "Calling 911");
+    layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
+
     //send_int(2, 2);
     
     
@@ -57,6 +58,8 @@ static TextLayer *try;
   init2();
      
      text_layer_set_text(try, "Sending message");
+     layer_add_child(window_get_root_layer(s_main_window), text_layer_get_layer(try));
+
     
     
     //send_int(3, 3);
@@ -75,9 +78,9 @@ static TextLayer *try;
  void main_window_load(Window *window) {
 
      // Create output TextLayer
-    try = text_layer_create(GRect(10, 5, 144, 168));  
-    text_layer_set_background_color(try, GColorClear);
-    text_layer_set_text_color(try, GColorBlack);
+    try = text_layer_create(GRect(0, 0, 144, 168));  
+    text_layer_set_background_color(try, GColorBlack);
+    text_layer_set_text_color(try, GColorClear);
     
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(try));
 //     window_set_click_config_provider(s_main_window, click_config_provider);
@@ -132,17 +135,20 @@ void init2()
     .load = main_window_load,
     .unload = main_window_unload
   });
+    
     window_stack_push(s_main_window, true);
-
+    
+//      text_layer_set_text(try, "Sending message");
      APP_LOG(APP_LOG_LEVEL_INFO, "PUSHED.");
 }
 
 void deinit2()
 {
-    window_stack_remove(s_main_window,true);
+//      psleep(4000);
+//     window_stack_remove(s_main_window,true);
     
      APP_LOG(APP_LOG_LEVEL_INFO, "POPPED.");
-     window_destroy(s_main_window);
+     //window_destroy(s_main_window);
 }
 
 int main(void) 
@@ -151,5 +157,6 @@ int main(void)
   app_event_loop();
   deinit();
 }
+
 
 
