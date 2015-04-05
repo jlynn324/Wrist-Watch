@@ -13,15 +13,15 @@ void init() {
         .load = window_load,
         .unload = window_unload,
     });
-    
+    window_stack_push(g_window, true); 
     //----------------------bluetooth-----------------------------------------------
-    window_stack_push(g_window, true);    
-  // Create main Window
-  s_main_window = window_create();
-  window_set_window_handlers(s_main_window, (WindowHandlers) {
-    .load = main_window_load,
-    .unload = main_window_unload
-  });
+  // Create main Window 
+    
+//   s_main_window = window_create();
+//   window_set_window_handlers(s_main_window, (WindowHandlers) {
+//     .load = main_window_load,
+//     .unload = main_window_unload
+//   });
   window_set_click_config_provider(s_main_window, click_config_provider);
   window_stack_push(s_main_window, true);
 }

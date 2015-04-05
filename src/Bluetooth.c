@@ -51,11 +51,12 @@ static TextLayer *s_output_layer;
 
     //TODO: Put the home screen stuff in this
   // Create output TextLayer
-  s_output_layer = text_layer_create(GRect(5, 0, window_bounds.size.w - 5, window_bounds.size.h));
-  text_layer_set_font(s_output_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
-  text_layer_set_text(s_output_layer, "No button pressed yet.");
-  text_layer_set_overflow_mode(s_output_layer, GTextOverflowModeWordWrap);
-  layer_add_child(window_layer, text_layer_get_layer(s_output_layer));
+     
+//   s_output_layer = text_layer_create(GRect(5, 0, window_bounds.size.w - 5, window_bounds.size.h));
+//   text_layer_set_font(s_output_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
+//   text_layer_set_text(s_output_layer, "No button pressed yet.");
+//   text_layer_set_overflow_mode(s_output_layer, GTextOverflowModeWordWrap);
+//   layer_add_child(window_layer, text_layer_get_layer(s_output_layer));
 }
 
  void main_window_unload(Window *window) {
