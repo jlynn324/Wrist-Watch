@@ -69,27 +69,6 @@ static void main_window_unload(Window *window) {
   text_layer_destroy(s_output_layer);
 }
 
-static void init() {
-  // Create main Window
-  s_main_window = window_create();
-  window_set_window_handlers(s_main_window, (WindowHandlers) {
-    .load = main_window_load,
-    .unload = main_window_unload
-  });
-  window_set_click_config_provider(s_main_window, click_config_provider);
-  window_stack_push(s_main_window, true);
-}
-
-static void deinit() {
-  // Destroy main Window
-  window_destroy(s_main_window);
-}
-
-int main(void) {
-  init();
-  app_event_loop();
-  deinit();
-}
     /*
  * main.c
  * Sets up a Window and a TextLayer, then subscribes to future
