@@ -1,9 +1,8 @@
-#include <pebble.h>
+#include <Watch_App_Face.h>
 
-Window *g_window;
 TextLayer *choiceOne;
 
-void window_load(Window *window)    //takes care of elements within window object
+void window_load(Window *window)    
 {
     //Creating the text layer
     choiceOne = text_layer_create(GRect(10, 5, 144, 168));  
@@ -14,7 +13,7 @@ void window_load(Window *window)    //takes care of elements within window objec
     text_layer_set_text(choiceOne, "    Emergency \n\n\n\n    911 \n\n\n\n\n    Message Sphere");
 }
 
-void window_unload(Window *window)    //same as above but for destruction
+void window_unload(Window *window)    
 {
     text_layer_destroy(choiceOne);
 }

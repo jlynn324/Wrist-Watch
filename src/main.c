@@ -3,9 +3,7 @@
 #include <Watch_App_Face.h>
     
 static Window *s_main_window;
-static TextLayer *s_output_layer;
 Window *g_window;
-TextLayer *choiceOne;
     
 void init() {
     //----------------------watch_app-------------------------------------
@@ -17,7 +15,7 @@ void init() {
     });
     
     //----------------------bluetooth-----------------------------------------------
-    window_stack_push(g_window, true);    //TRY using 'false' and commenting this out
+    window_stack_push(g_window, true);    
   // Create main Window
   s_main_window = window_create();
   window_set_window_handlers(s_main_window, (WindowHandlers) {
@@ -29,11 +27,14 @@ void init() {
 }
 
 void deinit() {
+    
+    //bluetooth
+    // Destroy main Window
+    window_destroy(s_main_window);
+    
     //watch app
     window_destroy(g_window);
-    //bluetooth
-  // Destroy main Window
-  window_destroy(s_main_window);
+
 }
 
 int main(void) 
